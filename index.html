@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b3d">
+  <meta name="description" content="TN Vidros — soluções em vidros para projetos residenciais e comerciais. Janelas, portas, box, espelhos, sacadas, guarda-corpos e fachadas.">
+  <title>TN Vidros | Transparência que transforma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#071b3d;--blue:#0a3473;--electric:#1c78d4;--ice:#f3f7fb;--ink:#14243a;--muted:#65748a;--white:#fff;--line:rgba(7,27,61,.12);--shadow:0 24px 70px rgba(7,27,61,.13)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input,select,textarea{font:inherit}.container{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+    .topline{height:4px;background:linear-gradient(90deg,var(--navy),var(--electric),#a4d9ff)}header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.91);backdrop-filter:blur(18px);border-bottom:1px solid rgba(7,27,61,.07)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;min-width:0}.brand img{width:58px;height:58px;object-fit:contain;border-radius:8px}.brand-name{font-family:Manrope,sans-serif;font-size:20px;letter-spacing:.16em;font-weight:800;color:var(--navy)}.brand-name span{display:block;font:500 9px "DM Sans",sans-serif;letter-spacing:.22em;color:#7b8798;margin-top:2px}.nav-links{display:flex;align-items:center;gap:27px;font-size:13px;font-weight:600;color:#32435c}.nav-links a:not(.btn){transition:color .2s}.nav-links a:hover{color:var(--electric)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:5px;padding:14px 20px;background:var(--electric);color:#fff;font-weight:700;font-size:13px;letter-spacing:.01em;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(28,120,212,.25);background:#1269bd}.btn-dark{background:var(--navy)}.btn-dark:hover{background:#12346a}.menu-toggle{display:none;background:none;border:0;color:var(--navy);font-size:28px;cursor:pointer}
+    .hero{position:relative;isolation:isolate;min-height:620px;display:flex;align-items:center;overflow:hidden;background:var(--navy);color:#fff}.hero-bg{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(90deg,rgba(4,19,46,.94) 0%,rgba(4,19,46,.78) 43%,rgba(4,19,46,.13) 100%),url("assets/banner-tn.png");background-size:cover;background-position:center}.hero:after{content:"";position:absolute;z-index:-1;right:-140px;bottom:-360px;width:650px;height:650px;border:1px solid rgba(105,190,255,.3);border-radius:50%;box-shadow:0 0 0 60px rgba(105,190,255,.04),0 0 0 120px rgba(105,190,255,.035)}.hero-content{padding:92px 0 100px;max-width:680px}.eyebrow{display:flex;align-items:center;gap:11px;text-transform:uppercase;letter-spacing:.19em;font-size:10px;font-weight:700;color:#8dcaff}.eyebrow:before{content:"";width:28px;height:1px;background:#64b6ff}.hero h1{font-family:Manrope,sans-serif;font-size:clamp(42px,6vw,76px);line-height:1.04;letter-spacing:-.055em;margin:25px 0 22px;font-weight:800}.hero h1 span{color:#8dcaff}.hero p{max-width:510px;color:rgba(255,255,255,.76);font-size:16px;line-height:1.8;margin:0 0 32px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.btn-outline{border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.07);color:#fff}.btn-outline:hover{background:#fff;color:var(--navy)}.hero-note{display:flex;gap:28px;flex-wrap:wrap;margin-top:46px;color:rgba(255,255,255,.82);font-size:11px;letter-spacing:.04em}.hero-note span{display:flex;align-items:center;gap:9px}.mini-check{width:19px;height:19px;border:1px solid #71bfff;border-radius:50%;display:inline-grid;place-items:center;color:#8dcaff;font-size:11px}
+    .trustbar{background:var(--ice);border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0;gap:25px}.trust-item{display:flex;align-items:center;justify-content:center;gap:14px;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.trust-icon{width:42px;height:42px;border:1px solid #c7d7e9;border-radius:50%;display:grid;place-items:center;color:var(--blue);font-size:19px}.trust-item strong{display:block;font-size:12px;color:var(--navy)}.trust-item small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
+    section{padding:100px 0}.section-head{max-width:670px;margin-bottom:44px}.kicker{color:var(--electric);font-size:10px;text-transform:uppercase;letter-spacing:.2em;font-weight:800}.section-head h2{font-family:Manrope,sans-serif;font-size:clamp(30px,4vw,47px);line-height:1.12;letter-spacing:-.045em;color:var(--navy);margin:15px 0}.section-head p{color:var(--muted);font-size:15px;line-height:1.8;margin:0}.services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service-card{position:relative;min-height:185px;border:1px solid var(--line);padding:27px;border-radius:8px;background:#fff;overflow:hidden;transition:transform .3s,border-color .3s,box-shadow .3s}.service-card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-55px;bottom:-65px;background:linear-gradient(135deg,rgba(28,120,212,.1),rgba(28,120,212,0));transition:transform .4s}.service-card:hover{transform:translateY(-6px);border-color:#a7c8eb;box-shadow:var(--shadow)}.service-card:hover:after{transform:scale(1.7)}.service-num{font:700 11px Manrope,sans-serif;color:#7ba4d1;letter-spacing:.12em}.service-card h3{font:700 18px Manrope,sans-serif;color:var(--navy);margin:25px 0 9px}.service-card p{font-size:13px;line-height:1.7;color:var(--muted);margin:0;max-width:270px}.service-arrow{position:absolute;right:25px;top:25px;color:var(--electric);font-size:20px}
+    .about{background:var(--ice)}.about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px}.about-visual{position:relative;min-height:480px}.about-visual img{width:100%;height:480px;object-fit:cover;border-radius:8px;box-shadow:var(--shadow)}.floating-label{position:absolute;right:-20px;bottom:25px;background:var(--navy);color:#fff;padding:23px 25px;border-radius:5px;max-width:220px;box-shadow:var(--shadow)}.floating-label strong{display:block;font:700 17px Manrope,sans-serif;margin-bottom:7px}.floating-label span{font-size:12px;line-height:1.6;color:#c4d7ed}.about-copy .section-head{margin-bottom:22px}.about-copy p{color:var(--muted);line-height:1.9;font-size:14px}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0 32px}.benefit{display:flex;gap:10px;font-size:12px;font-weight:700;color:var(--navy);line-height:1.5}.benefit i{font-style:normal;color:var(--electric);font-size:17px}
+    .portfolio{background:#fff}.portfolio-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:230px 230px;gap:15px}.project{position:relative;overflow:hidden;border-radius:7px;background:#dce4ec;cursor:pointer}.project:first-child{grid-row:span 2}.project video{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}.project-video{border-radius:inherit}
+    .project img,.project video{width:100%;height:100%;object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1)}.project:hover img,.project:hover video{transform:scale(1.06)}.project:after{content:"";position:absolute;inset:30% 0 0;background:linear-gradient(transparent,rgba(4,18,43,.83));pointer-events:none}.project-caption{position:absolute;z-index:1;bottom:20px;left:20px;right:20px;color:#fff}.project-caption small{display:block;color:#a8d5ff;font-size:9px;text-transform:uppercase;letter-spacing:.16em;margin-bottom:7px}.project-caption strong{font:700 17px Manrope,sans-serif}.portfolio-foot{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:30px}.portfolio-foot p{color:var(--muted);font-size:13px;line-height:1.7;max-width:520px;margin:0}
+    .process{background:var(--navy);color:#fff;overflow:hidden;position:relative}.process .section-head h2{color:#fff}.process .section-head p{color:#b5c5da}.process .kicker{color:#8dcaff}.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.process-step{padding-top:22px;border-top:1px solid rgba(255,255,255,.22)}.step-no{font:700 12px Manrope,sans-serif;color:#82c4ff;letter-spacing:.1em}.process-step h3{font:700 17px Manrope,sans-serif;margin:22px 0 10px}.process-step p{font-size:12px;line-height:1.8;color:#b5c5da;margin:0}
+    .contact{background:linear-gradient(180deg,#f3f7fb,#fff)}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:start}.contact-copy .section-head{margin-bottom:28px}.contact-copy>p{font-size:14px;line-height:1.8;color:var(--muted)}.contact-detail{padding:17px 0;border-top:1px solid var(--line);display:flex;gap:14px;align-items:center}.contact-detail .detail-icon{width:40px;height:40px;border-radius:6px;background:#e2eefb;color:var(--blue);display:grid;place-items:center;font-size:18px}.contact-detail strong{display:block;font-size:12px;color:var(--navy)}.contact-detail span{display:block;font-size:12px;color:var(--muted);margin-top:4px}.form-card{background:#fff;border:1px solid var(--line);padding:34px;border-radius:9px;box-shadow:var(--shadow)}.form-card h3{font:800 24px Manrope,sans-serif;color:var(--navy);margin:0 0 8px}.form-card>p{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 25px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:700;color:#354761}.field input,.field select,.field textarea{width:100%;border:1px solid #d9e2ed;border-radius:5px;background:#fbfcfe;padding:13px 13px;outline:none;color:var(--ink);font-size:13px;transition:border .2s,box-shadow .2s}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6aa9e8;box-shadow:0 0 0 3px rgba(28,120,212,.1)}.field textarea{min-height:105px;resize:vertical}.form-submit{width:100%;margin-top:20px;padding:16px}.form-note{font-size:10px;color:#8290a2;line-height:1.6;margin-top:13px;text-align:center}
+    footer{background:#04132c;color:#fff;padding:32px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand img{width:44px;height:44px;object-fit:contain;border-radius:4px}.footer-brand strong{font:800 15px Manrope,sans-serif;letter-spacing:.14em}.footer-brand small{display:block;color:#9db0ca;font-size:9px;letter-spacing:.12em;margin-top:3px}.footer-copy{font-size:11px;color:#9db0ca}.footer-links{display:flex;gap:20px;font-size:11px;color:#dce8f6}.footer-links a:hover{color:#8dcaff}
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}.delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}.back-top{position:fixed;right:22px;bottom:22px;width:44px;height:44px;border-radius:5px;background:var(--navy);color:#fff;display:grid;place-items:center;z-index:20;opacity:0;pointer-events:none;transform:translateY(8px);transition:.25s;box-shadow:0 8px 25px #071b3d33}.back-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+    @media(max-width:900px){.nav-links{gap:16px}.nav-links a{font-size:12px}.nav-links .btn{padding:12px 14px}.hero{min-height:570px}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:38px}.portfolio-grid{grid-template-columns:1fr 1fr;grid-template-rows:250px 200px 200px}.project:first-child{grid-row:span 2}.project:last-child{grid-column:span 2}.contact-grid{gap:32px}.process-grid{grid-template-columns:repeat(2,1fr);row-gap:35px}}
+    @media(max-width:680px){.container{width:min(100% - 34px,540px)}.nav{height:70px}.brand img{width:48px;height:48px}.brand-name{font-size:17px}.menu-toggle{display:block}.nav-links{position:fixed;inset:70px 0 auto 0;background:#fff;padding:22px 25px 28px;display:flex;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line);box-shadow:0 20px 35px #071b3d18;transform:translateY(-150%);opacity:0;pointer-events:none;transition:.3s}.nav-links.open{transform:translateY(0);opacity:1;pointer-events:auto}.nav-links a:not(.btn){padding:14px 0;border-bottom:1px solid #edf1f6;font-size:14px}.nav-links .btn{margin-top:18px}.hero{min-height:620px}.hero-bg{background-position:60% center;background-image:linear-gradient(90deg,rgba(4,19,46,.94),rgba(4,19,46,.73)),url("assets/banner-tn.png")}.hero-content{padding:76px 0 65px}.hero h1{font-size:clamp(42px,12vw,61px)}.hero p{font-size:14px}.hero-note{gap:13px;flex-direction:column;margin-top:33px}.trust-grid{grid-template-columns:1fr;gap:0;padding:8px 0}.trust-item{justify-content:flex-start;border-right:0;border-bottom:1px solid var(--line);padding:14px 4px}.trust-item:last-child{border-bottom:0}section{padding:72px 0}.section-head{margin-bottom:32px}.service-grid{grid-template-columns:1fr;gap:12px}.service-card{min-height:160px;padding:23px}.service-card h3{margin-top:19px}.about-grid,.contact-grid{grid-template-columns:1fr;gap:35px}.about-visual{min-height:340px}.about-visual img{height:340px}.floating-label{right:10px;bottom:15px}.benefits{gap:14px}.portfolio-grid{grid-template-columns:1fr 1fr;grid-template-rows:250px 175px 175px;gap:10px}.project:first-child{grid-row:span 2}.project:last-child{grid-column:span 2}.project-caption{left:13px;right:12px;bottom:14px}.project-caption strong{font-size:14px}.project-caption small{font-size:8px}.portfolio-foot{align-items:flex-start;flex-direction:column}.process-grid{grid-template-columns:1fr 1fr;gap:28px 18px}.process-step h3{font-size:15px}.form-card{padding:24px 18px}.form-grid{grid-template-columns:1fr;gap:14px}.field.full{grid-column:auto}.footer-row{flex-direction:column;align-items:flex-start}.footer-links{flex-wrap:wrap}.footer-copy{line-height:1.7}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="TN Vidros - início">
+        <img src="assets/logo-tn.jpg" alt="Logo TN Vidros">
+        <div class="brand-name">TN VIDROS<span>TRANSPARÊNCIA QUE TRANSFORMA</span></div>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Navegação principal">
+        <a href="#servicos">Soluções</a><a href="#sobre">A TN Vidros</a><a href="#projetos">Projetos</a><a href="#processo">Como funciona</a>
+        <a class="btn" href="#contato">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">TN Vidros · Soluções sob medida</div>
+          <h1>O vidro certo.<br><span>O projeto perfeito.</span></h1>
+          <p>Projetamos soluções em vidro que valorizam cada ambiente, combinando estética contemporânea, funcionalidade e acabamento de alto padrão.</p>
+          <div class="hero-actions"><a class="btn" href="#contato">Solicitar orçamento <span>↗</span></a><a class="btn btn-outline" href="#projetos">Conhecer projetos <span>↓</span></a></div>
+          <div class="hero-note"><span><i class="mini-check">✓</i> Soluções residenciais e comerciais</span><span><i class="mini-check">✓</i> Atendimento especializado</span><span><i class="mini-check">✓</i> Projeto sob medida</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="trustbar"><div class="container trust-grid">
+      <div class="trust-item"><div class="trust-icon">◇</div><div><strong>Qualidade e segurança</strong><small>Materiais e instalação cuidadosa</small></div></div>
+      <div class="trust-item"><div class="trust-icon">⌁</div><div><strong>Atendimento especializado</strong><small>Orientação em cada etapa</small></div></div>
+      <div class="trust-item"><div class="trust-icon">↗</div><div><strong>Acabamento de alto padrão</strong><small>Detalhes que fazem diferença</small></div></div>
+    </div></div>
+
+    <section class="services" id="servicos"><div class="container">
+      <div class="section-head reveal"><div class="kicker">Nossas soluções</div><h2>Funcionalidade com<br>design e transparência.</h2><p>Do detalhe decorativo às grandes aberturas, oferecemos soluções em vidro pensadas para integrar espaços e valorizar seu imóvel.</p></div>
+      <div class="service-grid">
+        <article class="service-card reveal"><span class="service-num">01 / ABERTURAS</span><span class="service-arrow">↗</span><h3>Portas e janelas de vidro</h3><p>Mais luz natural, integração e leveza para os ambientes.</p></article>
+        <article class="service-card reveal delay-1"><span class="service-num">02 / BANHEIROS</span><span class="service-arrow">↗</span><h3>Box para banheiro</h3><p>Soluções sob medida com visual limpo e uso prático no dia a dia.</p></article>
+        <article class="service-card reveal delay-2"><span class="service-num">03 / DECORAÇÃO</span><span class="service-arrow">↗</span><h3>Espelhos decorativos</h3><p>Espelhos tradicionais e opções com iluminação para ambientes marcantes.</p></article>
+        <article class="service-card reveal"><span class="service-num">04 / ÁREAS EXTERNAS</span><span class="service-arrow">↗</span><h3>Sacadas e guarda-corpos</h3><p>Proteção e sofisticação sem bloquear a vista.</p></article>
+        <article class="service-card reveal delay-1"><span class="service-num">05 / ARQUITETURA</span><span class="service-arrow">↗</span><h3>Fachadas em vidro</h3><p>Linhas contemporâneas para projetos residenciais e comerciais.</p></article>
+        <article class="service-card reveal delay-2"><span class="service-num">06 / MOBILIÁRIO</span><span class="service-arrow">↗</span><h3>Tampos e peças especiais</h3><p>Peças personalizadas que unem resistência, elegância e precisão.</p></article>
+      </div>
+    </div></section>
+
+    <section class="about" id="sobre"><div class="container about-grid">
+      <div class="about-visual reveal"><img src="assets/porta-vidro.jpeg" alt="Porta de vidro instalada em ambiente residencial" loading="lazy"><div class="floating-label"><strong>Detalhes que valorizam.</strong><span>Soluções pensadas para combinar com seu espaço e seu estilo.</span></div></div>
+      <div class="about-copy reveal delay-1"><div class="section-head"><div class="kicker">Sobre a TN Vidros</div><h2>Seu projeto merece atenção em cada detalhe.</h2><p>A TN Vidros transforma ideias em soluções sob medida. Trabalhamos para entregar um resultado que una beleza, praticidade e integração com a arquitetura do ambiente.</p></div>
+        <p>Da escolha da solução ao acabamento final, cada etapa é conduzida com cuidado, comunicação clara e atenção às necessidades do cliente.</p>
+        <div class="benefits"><div class="benefit"><i>✓</i><span>Projeto alinhado à sua necessidade</span></div><div class="benefit"><i>✓</i><span>Acabamento cuidadoso</span></div><div class="benefit"><i>✓</i><span>Orientação especializada</span></div><div class="benefit"><i>✓</i><span>Soluções personalizadas</span></div></div>
+        <a class="btn btn-dark" href="#contato">Vamos conversar sobre seu projeto <span>↗</span></a>
+      </div>
+    </div></section>
+
+    <section class="portfolio" id="projetos"><div class="container">
+      <div class="section-head reveal"><div class="kicker">Trabalhos selecionados</div><h2>Projetos reais.<br>Resultados que inspiram.</h2><p>Alguns exemplos do nosso trabalho em vidros e espelhos. Cada solução é planejada de acordo com o espaço e as necessidades do projeto.</p></div>
+      <div class="portfolio-grid">
+        <article class="project reveal"><img src="assets/porta-vidro.jpeg" alt="Instalação de porta de vidro com esquadrias escuras" loading="lazy"><div class="project-caption"><small>Integração de ambientes</small><strong>Porta de vidro</strong></div></article>
+        <article class="project reveal delay-1"><img src="assets/espelho-led.jpeg" alt="Espelho com iluminação LED em bancada" loading="lazy"><div class="project-caption"><small>Detalhe contemporâneo</small><strong>Espelho com LED</strong></div></article>
+        <article class="project reveal delay-2"><img src="assets/mesa-espelhada.jpeg" alt="Mesa de centro com acabamento espelhado" loading="lazy"><div class="project-caption"><small>Design e acabamento</small><strong>Mesa espelhada</strong></div></article>
+        <article class="project reveal"><video class="project-video" autoplay muted loop playsinline preload="metadata" poster="assets/banner-tn.png" aria-label="Vídeo de projetos e soluções em vidro da TN Vidros"><source src="assets/projeto-video-1.mp4" type="video/mp4">Seu navegador não suporta vídeo.</video></article>
+        <article class="project reveal delay-1"><img src="assets/espelho-led.jpeg" alt="Detalhe de espelho iluminado" loading="lazy"><div class="project-caption"><small>Personalização</small><strong>Espelhos decorativos</strong></div></article>
+      </div>
+      <div class="portfolio-foot reveal"><p>Tem uma ideia em mente? Envie os detalhes do seu projeto e vamos conversar sobre a melhor solução para o seu espaço.</p><a class="btn btn-dark" href="#contato">Pedir orçamento <span>↗</span></a></div>
+    </div></section>
+
+    <section class="process" id="processo"><div class="container">
+      <div class="section-head reveal"><div class="kicker">Uma experiência simples</div><h2>Do primeiro contato<br>à solução final.</h2><p>Um processo claro para entender o que você precisa e orientar os próximos passos do seu projeto.</p></div>
+      <div class="process-grid">
+        <article class="process-step reveal"><span class="step-no">ETAPA 01</span><h3>Conte sua ideia</h3><p>Informe o tipo de serviço, o ambiente e o que deseja realizar.</p></article>
+        <article class="process-step reveal delay-1"><span class="step-no">ETAPA 02</span><h3>Avaliamos o projeto</h3><p>Conversamos sobre detalhes, medidas e possibilidades para a solução.</p></article>
+        <article class="process-step reveal delay-2"><span class="step-no">ETAPA 03</span><h3>Alinhamos a proposta</h3><p>Você recebe orientação para definir a opção adequada ao seu projeto.</p></article>
+        <article class="process-step reveal delay-3"><span class="step-no">ETAPA 04</span><h3>Próximos passos</h3><p>Com tudo alinhado, combinamos os detalhes para seguir com o serviço.</p></article>
+      </div>
+    </div></section>
+
+    <section class="contact" id="contato"><div class="container contact-grid">
+      <div class="contact-copy reveal"><div class="section-head"><div class="kicker">Fale com a TN Vidros</div><h2>Vamos tirar seu projeto do papel?</h2><p>Preencha o formulário com algumas informações. Ao enviar, você será direcionado ao WhatsApp com a mensagem pronta para continuar o atendimento.</p></div>
+        <div class="contact-detail"><div class="detail-icon">↗</div><div><strong>WhatsApp</strong><span><a href="https://wa.me/5585981961410" target="_blank" rel="noopener noreferrer">(85) 98196-1410 · Fale com nossa equipe</a></span></div></div>
+        <div class="contact-detail"><div class="detail-icon">◇</div><div><strong>Orçamento personalizado</strong><span>Conte o que precisa e receba orientação</span></div></div>
+        <div class="contact-detail"><div class="detail-icon">⌖</div><div><strong>Projetos sob medida</strong><span>Soluções para residências e comércios</span></div></div>
+      </div>
+      <form class="form-card reveal delay-1" id="whatsapp-form">
+        <h3>Solicite seu orçamento</h3><p>Quanto mais detalhes você informar, melhor poderemos entender sua necessidade.</p>
+        <div class="form-grid">
+          <div class="field"><label for="nome">Nome completo *</label><input id="nome" name="nome" autocomplete="name" placeholder="Como podemos chamar você?" required></div>
+          <div class="field"><label for="telefone">Telefone para contato *</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" required></div>
+          <div class="field full"><label for="servico">Qual serviço você precisa? *</label><select id="servico" name="servico" required><option value="">Selecione uma opção</option><option>Portas e janelas de vidro</option><option>Box para banheiro</option><option>Espelhos decorativos / espelho com LED</option><option>Sacada de vidro</option><option>Guarda-corpo de vidro</option><option>Fachada em vidro</option><option>Tampos e peças especiais</option><option>Outro serviço</option></select></div>
+          <div class="field"><label for="local">Cidade / região</label><input id="local" name="local" placeholder="Onde será o serviço?"></div>
+          <div class="field"><label for="prazo">Quando pretende realizar?</label><select id="prazo" name="prazo"><option value="">Selecione (opcional)</option><option>O quanto antes</option><option>Nas próximas semanas</option><option>Estou planejando</option></select></div>
+          <div class="field full"><label for="detalhes">Conte um pouco sobre o projeto</label><textarea id="detalhes" name="detalhes" placeholder="Medidas aproximadas, tipo de ambiente ou outros detalhes..."></textarea></div>
+        </div>
+        <button class="btn form-submit" type="submit">Enviar pelo WhatsApp <span>↗</span></button>
+        <div class="form-note">Seus dados serão usados para preparar a mensagem de atendimento. O envio acontece no WhatsApp.</div>
+      </form>
+    </div></section>
+  </main>
+
+  <footer><div class="container footer-row">
+    <a class="footer-brand" href="#inicio"><img src="assets/logo-tn.jpg" alt=""><span><strong>TN VIDROS</strong><small>TRANSPARÊNCIA QUE TRANSFORMA</small></span></a>
+    <div class="footer-copy">© <span id="year"></span> TN Vidros. Todos os direitos reservados.</div>
+    <div class="footer-links"><a href="#servicos">Soluções</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a><a href="https://www.instagram.com/tn.vidros/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://wa.me/5585981961410" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div>
+  </div></footer>
+  <a class="back-top" href="#inicio" aria-label="Voltar ao topo">↑</a>
+  <script>
+    // IMPORTANTE: troque pelo número oficial da TN Vidros, com código do país e DDD.
+    // Exemplo: 5511999999999 (55 + DDD + número), somente dígitos.
+    const WHATSAPP_NUMBER = "5585981961410";
+
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      document.body.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? '×' : '☰';
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open'); document.body.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded','false'); toggle.textContent='☰';
+    }));
+
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}
+    }), {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    const backTop = document.querySelector('.back-top');
+    window.addEventListener('scroll', () => backTop.classList.toggle('show', window.scrollY > 500), {passive:true});
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('whatsapp-form').addEventListener('submit', function(event){
+      event.preventDefault();
+      if (WHATSAPP_NUMBER === "5500000000000") {
+        alert("O site precisa ser configurado com o número oficial do WhatsApp da TN Vidros. Edite a variável WHATSAPP_NUMBER no final do arquivo index.html.");
+        return;
+      }
+      const data = new FormData(this);
+      const fields = [
+        "Olá! Gostaria de solicitar um orçamento com a TN Vidros.",
+        "",
+        "Nome: " + (data.get('nome') || ''),
+        "Telefone: " + (data.get('telefone') || ''),
+        "Serviço: " + (data.get('servico') || ''),
+        "Cidade/região: " + (data.get('local') || 'Não informado'),
+        "Prazo: " + (data.get('prazo') || 'Não informado'),
+        "Detalhes do projeto: " + (data.get('detalhes') || 'Não informado')
+      ];
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(fields.join("\n")), "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
